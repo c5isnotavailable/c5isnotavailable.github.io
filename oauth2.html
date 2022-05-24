@@ -1,0 +1,18 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Twitter: Oauth2</title>
+	</head>
+	<body>
+		<h1 id=code></h1>
+		<script>
+			let code = document.getElementById("code");
+			let search = {};
+			location.search.substr(1).split("&").forEach((x) => 
+			{
+				let [k, v] = x.split("=");
+				search[k] = v;
+			});
+		</script>
+	</body>
+</html>
